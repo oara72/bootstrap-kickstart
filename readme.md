@@ -40,3 +40,4 @@ $ bower install
 $ bower install jquery-ui 
 ```
 
+README
