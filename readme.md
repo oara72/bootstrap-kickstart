@@ -35,8 +35,11 @@ $ bower install bootstrap
 ```
 
 Boostrap requiere jquery.
+
 ```
 $ bower install
+```
+```
 $ bower install jquery-ui 
 ```
 
