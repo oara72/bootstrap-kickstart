@@ -1,6 +1,6 @@
-## BOOTSTRAP.
+# BOOTSTRAP.
 
-1.1. Inicio.
+## 1.1. Inicio.
 
 Opciones:
 
@@ -14,7 +14,7 @@ Observación: contiene todos los archivos Less, y JavaScript originales de Boots
 
 c) descargar el código en formato SASS.
 -> [github - sass](https://github.com/twbs/bootstrap-sass).
-facilitar la integración de Bootstrap en las aplicaciones Ruby On Rails, Compass o cualquier otro proyecto basado en Sass. 
+facilita la integración de Bootstrap en las aplicaciones Ruby On Rails, Compass o cualquier otro proyecto basado en Sass. 
 
 
 1.2 Utilización de CDN de bootstrap.
@@ -39,10 +39,4 @@ Boostrap requiere jquery.
 $ bower install
 $ bower install jquery-ui 
 ```
-
-2. Contenidos de bootstrap.
-
-Bootstrap se puede descargar de dos maneras, compilado o mediante el código fuente original.
-
-
 
