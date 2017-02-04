@@ -41,7 +41,125 @@ script>
 
 ## Grid across multiple devices
 
-![](img/multipledevices.jpg "accros multiple devices")
+![](img/multipledevices.png "accros multiple devices")
+
+Inside each row I can create until 12 columns.
+
+Example:
+
+```
+<div class="container">
+    <div class="row">
+        <div class="col-md-1">.col-md-1< /div >
+        <div class="col-md-1">.col-md-1< /div >
+        <div class="col-md-1">.col-md-1< /div >
+        <div class="col-md-1">.col-md-1< /div >
+        <div class="col-md-1">.col-md-1< /div >
+        <div class="col-md-1">.col-md-1< /div >
+        <div class="col-md-1">.col-md-1< /div >
+        <div class="col-md-1">.col-md-1< /div >
+        <div class="col-md-1">.col-md-1< /div >
+        <div class="col-md-1">.col-md-1< /div >
+        <div class="col-md-1">.col-md-1< /div >
+        <div class="col-md-1">.col-md-1< /div >
+    < /div >
+< /div >
+
+```
+
+In order to have some visual results, add the following CSS to emphasize the grid:
+
+```
+<style type="text/css">
+    .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-6, .col-md-8 {
+    background-color: #34495e;
+    color: white;
+    line-height: 5em;
+    border: 1px solid white;
+    height: 5em;
+    }
+</style>
+```
+
+In the same way, we can define, 2, 3, 4, 6 or combinations like 8 and 4 columns.
+
+```
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">.col-md-4< /div >
+        <div class="col-md-4">.col-md-4< /div >
+        <div class="col-md-4">.col-md-4< /div >
+    < /div >
+    <div class="row">
+        <div class="col-md-3">.col-md-3< /div >
+        <div class="col-md-3">.col-md-3< /div >
+        <div class="col-md-3">.col-md-3< /div >
+        <div class="col-md-3">.col-md-3< /div >
+    < /div >
+    <div class="row">
+        <div class="col-md-6">.col-md-6< /div >
+        <div class="col-md-6">.col-md-6< /div >
+    < /div >
+    <div class="row">
+        <div class="col-md-8">.col-md-8< /div >
+        <div class="col-md-4">.col-md-4< /div >
+    < /div >
+< /div >
+```
+
+![](img/columns.png "different columns")
+
+## Multiple device support.
+
+You can define multiple different behaviours based on the device you want to have the grid for.
+
+```
+<div class="row">
+    <div class="col-sm-12 col-md-8">.col-sm-12 .col-md-8< /div >
+    <div class="col-sm-6 col-md-4">.col-sm-6 .col-md-4< /div >
+< /div >
+<div class="row">
+    <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4< /div >
+    <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4< /div >
+    <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4< /div >
+< /div >
+<div class="row">
+    <div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8< /div >
+    <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4< /div >
+< /div >
+```
+![](img/devices.png "multiple devices")
+In the first row, we have defined a 2 column layout made of 8 columns (.col-md-8) and 4 columns (.col-md-4) to divide
+width for the medium sized devices. Then we’ve also added another class defining the lyout of each column on small sized
+devices, in this case, the first column will fill up the whole row (.col-sm-12) and consequently the send columns will end up
+on a new line with a half width of a row (.col-sm-6). It goes the same way for the two other cases, ecen when using three
+classes, to define three different layouts based on the grid breakpoints. If a column or some of them fill up the whole row with
+columns (12), the remaining ones (if any) will normally enter a new line.
+
+## Offsetting and Nesting columns
+
+What if you didn’t want a clear layout that fills up all the row? Well, you can set up columns just the way you want by using
+column offsets.
+
+```
+<div class="row">
+    <div class="col-md-4">.col-md-4< /div >
+    <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4< /div >
+< /div >
+<div class="row">
+    <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3< /div >
+    <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3< /div >
+< /div >
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3< /div >
+< /div >
+```
+![](img/nesting.png)
+
+
+
+
+
 
 
 
