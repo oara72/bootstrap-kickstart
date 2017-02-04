@@ -1,6 +1,6 @@
 # Grids
 
-* For proper alignment and padding, rows must be wrapped within a .container respectively for fixed-width and full-width.
+* For proper alignment and padding, rows must be wrapped within a .container or .container-fluid respectively for fixed-width and full-width.
 
 * Use rows to create horizontal groups of columns.
 
@@ -45,25 +45,25 @@ script>
 
 Inside each row I can create until 12 columns.
 
-Example:
+Example 1:
 
 ```
 <div class="container">
     <div class="row">
-        <div class="col-md-1">.col-md-1< /div >
-        <div class="col-md-1">.col-md-1< /div >
-        <div class="col-md-1">.col-md-1< /div >
-        <div class="col-md-1">.col-md-1< /div >
-        <div class="col-md-1">.col-md-1< /div >
-        <div class="col-md-1">.col-md-1< /div >
-        <div class="col-md-1">.col-md-1< /div >
-        <div class="col-md-1">.col-md-1< /div >
-        <div class="col-md-1">.col-md-1< /div >
-        <div class="col-md-1">.col-md-1< /div >
-        <div class="col-md-1">.col-md-1< /div >
-        <div class="col-md-1">.col-md-1< /div >
-    < /div >
-< /div >
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+    </div>
+</div>
 
 ```
 
@@ -84,27 +84,30 @@ In order to have some visual results, add the following CSS to emphasize the gri
 In the same way, we can define, 2, 3, 4, 6 or combinations like 8 and 4 columns.
 
 ```
+
+Example 2:
+
 <div class="container">
     <div class="row">
-        <div class="col-md-4">.col-md-4< /div >
-        <div class="col-md-4">.col-md-4< /div >
-        <div class="col-md-4">.col-md-4< /div >
-    < /div >
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4">.col-md-4</div>
+    </div>
     <div class="row">
-        <div class="col-md-3">.col-md-3< /div >
-        <div class="col-md-3">.col-md-3< /div >
-        <div class="col-md-3">.col-md-3< /div >
-        <div class="col-md-3">.col-md-3< /div >
-    < /div >
+        <div class="col-md-3">.col-md-3</div>
+        <div class="col-md-3">.col-md-3</div>
+        <div class="col-md-3">.col-md-3</div>
+        <div class="col-md-3">.col-md-3</div>
+    </div>
     <div class="row">
-        <div class="col-md-6">.col-md-6< /div >
-        <div class="col-md-6">.col-md-6< /div >
-    < /div >
+        <div class="col-md-6">.col-md-6</div>
+        <div class="col-md-6">.col-md-6</div>
+    </div>
     <div class="row">
-        <div class="col-md-8">.col-md-8< /div >
-        <div class="col-md-4">.col-md-4< /div >
-    < /div >
-< /div >
+        <div class="col-md-8">.col-md-8</div>
+        <div class="col-md-4">.col-md-4</div>
+    </div>
+</div>
 ```
 
 ![](img/columns.png "different columns")
@@ -113,20 +116,22 @@ In the same way, we can define, 2, 3, 4, 6 or combinations like 8 and 4 columns.
 
 You can define multiple different behaviours based on the device you want to have the grid for.
 
+Example 3:
+
 ```
 <div class="row">
-    <div class="col-sm-12 col-md-8">.col-sm-12 .col-md-8< /div >
-    <div class="col-sm-6 col-md-4">.col-sm-6 .col-md-4< /div >
-< /div >
+    <div class="col-sm-12 col-md-8">.col-sm-12 .col-md-8</div>
+    <div class="col-sm-6 col-md-4">.col-sm-6 .col-md-4</div>
+</div>
 <div class="row">
-    <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4< /div >
-    <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4< /div >
-    <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4< /div >
-< /div >
+    <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+    <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+    <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+</div>
 <div class="row">
-    <div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8< /div >
+    <div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8</div>
     <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4< /div >
-< /div >
+</div>
 ```
 ![](img/devices.png "multiple devices")
 In the first row, we have defined a 2 column layout made of 8 columns (.col-md-8) and 4 columns (.col-md-4) to divide
@@ -141,18 +146,20 @@ columns (12), the remaining ones (if any) will normally enter a new line.
 What if you didn’t want a clear layout that fills up all the row? Well, you can set up columns just the way you want by using
 column offsets.
 
+example 4:
+
 ```
 <div class="row">
-    <div class="col-md-4">.col-md-4< /div >
-    <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4< /div >
-< /div >
+    <div class="col-md-4">.col-md-4</div>
+    <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div>
+</div>
 <div class="row">
-    <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3< /div >
-    <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3< /div >
-< /div >
+    <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+    <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
+</div>
 <div class="row">
-    <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3< /div >
-< /div >
+    <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
+</div>
 ```
 ![](img/nesting.png)
 
