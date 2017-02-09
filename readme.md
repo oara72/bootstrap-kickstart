@@ -150,16 +150,14 @@ example 4:
 
 ```
 <div class="row">
-    <div class="col-md-4">.col-md-4</div>
-    <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div>
-</div>
+<div class="col-md-8">
+.col-md-8
 <div class="row">
-    <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
-    <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
-</div>
-<div class="row">
-    <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
-</div>
+<div class="col-sm-8 col-md-6">.col-sm-8 .col-md-6< /div >
+<div class="col-sm-4 col-md-6">.col-sm-4 .col-md-6< /div >
+< /div >
+< /div >
+< /div >
 ```
 ![](img/nesting.png)
 
